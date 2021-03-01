@@ -31,8 +31,8 @@ echo "Copying files"
 set -x
 cp uninstall    /opt/droidcam/droidcam-uninstall
 cp icon2.png    /opt/droidcam/droidcam-icon.png
-cp droidcam     /usr/bin/
-cp droidcam-cli /usr/bin/
+cp droidcam     /usr/local/bin/
+cp droidcam-cli /usr/local/bin/
 set +x
 if [ -d "/usr/share/applications" ]; then
 	cp droidcam.desktop /usr/share/applications/

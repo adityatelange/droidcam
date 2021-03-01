@@ -49,7 +49,7 @@ Or alternatively, in case you removed the original repository after install, you
 
     $ sudo /opt/droidcam/droidcam-uninstall
 
-Both methods will remove the binaries `droidcam` and `droidcam-cli` from `/usr/bin` and remove cleanly the DKMS module `v4l2loopback_dc`. You may want to manually remove the uninstall script `/opt/droidcam/droidcam-uninstall` after you ran it.
+Both methods will remove the binaries `droidcam` and `droidcam-cli` from `/usr/local/bin` and remove cleanly the DKMS module `v4l2loopback_dc`. You may want to manually remove the uninstall script `/opt/droidcam/droidcam-uninstall` after you ran it.
 
 
 
@@ -57,4 +57,3 @@ Both methods will remove the binaries `droidcam` and `droidcam-cli` from `/usr/b
 [Droidcam]: https://github.com/aramg/droidcam "Droid source code page on Github"
 [droidcam build procedure]: https://github.com/aramg/droidcam/tree/master/linux "droidcam build procedure"
 [webcam resolutions]: http://www.dev47apps.com/droidcam/linuxx/ "Supported webcams resolutions"
-

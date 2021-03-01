@@ -8,7 +8,7 @@ if (lsmod | grep v4l2loopback_dc); then
 fi
 
 echo "Removing files"
-sudo rm -f /usr/bin/droidcam*
+sudo rm -f /usr/local/bin/droidcam*
 sudo rm -f /usr/share/applications/droidcam.desktop
 
 etc_modules() {
