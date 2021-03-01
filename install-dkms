@@ -42,9 +42,9 @@ setup_dkms_module() {
 }
 
 copy_uninstall_script() {
-    echo "Adding uninstall script in '/opt/droidcam-uninstall'"
+    echo "Adding uninstall script in '/opt/droidcam/droidcam-uninstall'"
     mkdir -p /opt || true
-    cp "${REPO_PATH}/uninstall-dkms" /opt/droidcam-uninstall
+    cp "${REPO_PATH}/uninstall-dkms" /opt/droidcam/droidcam-uninstall
 }
 
 # Here we go
@@ -58,5 +58,3 @@ register_video_module_at_boot_time
 modprobe ${V4L2_LOOPBACK_DC}
 
 echo 'Done'
-
-

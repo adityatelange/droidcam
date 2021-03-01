@@ -23,7 +23,7 @@ check_if_loaded() {
 }
 
 check_if_installed() {
-	if [ ! -s "/opt/droidcam-uninstall" ]
+	if [ ! -s "/opt/droidcam/droidcam-uninstall" ]
 	then
 		echo "Error: droidcam not installed. Run 'sudo ./install-client' first."
 		exit 1

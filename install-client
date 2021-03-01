@@ -16,10 +16,21 @@ if [ -f "$USER_HOME/.droidcam/settings" ]; then
 	rm -rf "$USER_HOME/.droidcam"
 fi
 
+# remove old files
+if [ -f "/opt/droidcam-uninstall" ]; then
+	mv "/opt/droidcam-uninstall" "/opt/droidcam/droidcam-uninstall"
+	rm -rf "/opt/droidcam-uninstall"
+fi
+
+if [ -f "/opt/droidcam-icon.png" ]; then
+	mv "/opt/droidcam-icon.png" "/opt/droidcam/droidcam-icon.png"
+	rm -rf "/opt/droidcam-icon.png"
+fi
+
 echo "Copying files"
 set -x
-cp uninstall    /opt/droidcam-uninstall
-cp icon2.png    /opt/droidcam-icon.png
+cp uninstall    /opt/droidcam/droidcam-uninstall
+cp icon2.png    /opt/droidcam/droidcam-icon.png
 cp droidcam     /usr/bin/
 cp droidcam-cli /usr/bin/
 set +x
